@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <form class="register" action="index.html" method="POST">
+
+        <div class="name">
+          <!-- FIRST NAME -->
+          <div class="firstname-register sec-pad ">
+            <label for="InputFirstName">First Name</label>
+            <input displa type="text" class="firstname-input fn-input" id="InputFirstName" placeholder="Your First Name" required="true">
+          </div>
+
+          <!-- LAST NAME -->
+          <div class="lastname-register sec-pad ">
+            <label for="InputLastName">Last Name</label>
+            <input type="text" class="lastname-input ln-input" id="InputLastName" placeholder="Your Last Name" required="true">
+          </div>
+        </div>
+        <br>
+        <label>Country</label>
+        <div class="country">
+          <select id="ctry">
+            <option value="CH">Choose Country</option>
+            <option value="USA">USA</option>
+            <option value="D.R.">DOM. Rep</option>
+          </select>
+        </div>
+        <br>
+        <div class="display">
+          <label>States</label> <br>
+          <select class="stts">
+            <option value="chState">Choose a State</option>
+          </select>
+        </div>
+        <br>
+        <div class="textField">
+          <label for="comments">Comments</label>
+          <input id="comments" type="text" placeholder="Your comments">
+        </div>
+
+        <div class="submitDiv">
+          <button id="submitBtn" type="button" name="button">Submit</button>
+        </div>
+      </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
