@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scope/DOM/Event Mini Challenges</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="q1">
+        <!-- 1. Create an HTML page with two buttons that argue with each other.
+        When one button is clicked, the text "I'm right" should be placed next to it.
+        When the other button is clicked, the text is replaced with, "No, I'm right!"  -->
+        <button id="p1Btn" type="button" name="button">Player 1</button>
+        <button id="p2Btn" type="button" name="button">Pkayer 2</button>
+        <h4 id="text">Who's Right ?</h4>
+      </div>
+
+      <div class="q2">
+        <!-- 2. Create an HTML page with a large element on the page that says
+        "Don't hover over me" inside of it. When you hover over the element,
+        send an alert to the user that says, "Hey, I told you not to hover over me!" -->
+        <h1 id="doNot">Don't hover over me</h1>
+      </div>
+
+      <div class="q3">
+        <!-- 3. Create an HTML page with javascript that listens for a keypress.
+        When the user presses that key, the text of the h1 should show the value of the key they have pressed.
+        Example: If the user presses "J", the text inside the h1 should be "J". -->
+        <h1 id="listens"></h1>
+      </div>
+
+      <div class="q4">
+        <!-- Create an HTML page with a form. The form should include inputs for a username, password,
+        an h1 tag as well as a button. In a Javascript file, write code that does the following things when the button is pressed:
+        - checks that the password is 12345678
+        - checks that the username is less than 14 characters in length
+        - if the info in the form is correct, have Javascript change the text in the h1 to say "Congrats on knowing your username and password!"
+        - if anything is wrong, send an alert message saying "Incorrect username or password" -->
+        <!-- FORM FOR THE REGISTRATION -->
+        <h1 id="register">Registration Form</h1>
+        <form>
+          <!-- USER NAME -->
+          <div class="username-register">
+            <label for="InputUserName">Username</label>
+            <input type="text" class="username-input un-input" id="InputUserName" placeholder="Username" required="true">
+          </div>
+
+          <!-- Email -->
+          <div class="email-register">
+            <label for="InputEmail">Email</label>
+            <input type="email" class="email-register-input e-input" id="InputEmail" placeholder="Email" required="true">
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="password-register">
+            <label for="InputPassword">Password</label>
+            <input type="password" class="password-register-input p-input" id="InputPassword" placeholder="Password" required="true">
+          </div>
+
+          <button id="submitBtn" type="button" name="button">Submit</button>
+      </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
