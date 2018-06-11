@@ -1,0 +1,30 @@
+body{
+  color: #00FF00;
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+}
+
+div{
+  width: 45%;
+  margin: 1.66%;
+  float: left;
+  border-radius: 15px;
+  border: 2px solid red;
+  box-shadow: 0 0 50px green;
+}
+
+hr{
+  width: 70%;
+  background-color: #00FF00;
+	border-top: 2px dashed #FF0000;
+}
+
+.selected{
+  display: none;
+}
+
+.addCat{
+  display: block;
+}
