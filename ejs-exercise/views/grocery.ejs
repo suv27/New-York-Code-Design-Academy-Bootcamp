@@ -1,0 +1,50 @@
+<!--views/list.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Grocery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <image src="https://d30y9cdsu7xlg0.cloudfront.net/png/163899-200.png" id="logo" />
+      <h1>All My Grocery</h1>
+      <p class="lead"></p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="list-group">
+          <div>
+            <h1>My Grocery List</h1>
+            <ul>
+              <% for(var i = 0; i < groceries.length; i++) { %>
+                <li>
+                  <%= groceries[i] %>
+                </li>
+                <% } %>
+            </ul>
+          </div>
+          <div>
+            <h1>My Todos For The Summer</h1>
+            <ul>
+              <% for(var i = 0; i < hobbies.length; i++) { %>
+                <li>
+                  <%= hobbies[i] %>
+                </li>
+                <% } %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Add footer.ejs here -->
+      <%- include('partials/footer') %>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body{
+  color: black;
+  width: 100%;
+  background-color: black !important;
+}
+
+.container{
+  width: 960px;
+  text-align: left;
+  padding: 50px;
+  margin: 2% auto;
+  box-shadow: 0 0 100px white;
+  background-color: rgba(247, 247, 247, 0.9);
+}
+
+.jumbotron {
+  color: black;
+  padding: 5px;
+  margin-top: 10px;
+  border: 2PX solid black;
+  box-shadow: 0 0 5px black;
+  background-color: #F0F0F0;
+}
+
+table,th,td {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.usersIN {
+  width: 50%;
+  float: right;
+}
+
+label{
+  font-size: 16px;
+  font-style: italic;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  display: block;
+  text-align: left;
+  border: 3px solid black;
+}
+
+.display{
+  display: none;
+}
+
+#submitBtn{
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  background-color: green;
+}
