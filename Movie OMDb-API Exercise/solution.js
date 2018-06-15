@@ -1,11 +1,13 @@
 
+
+
 $("#searchBox").keyup( (event) => {
   if($('#searchBox').val().length >= 2){
     $.ajax({
             type: 'GET',
             dataType: 'JSON',
             data: { t: event.target.value },
-            url: 'http://www.omdbapi.com/?i=tt3896198&apikey=d110335e',
+            url: 'http://www.omdbapi.com/?i=tt3896198&apikey={API_KEY}',
             success: function(response) {
               console.log(response);
               $('#title span').html(response.Title);
@@ -15,8 +17,6 @@ $("#searchBox").keyup( (event) => {
               $('#runtime span').html(response.Runtime);
               $('img').attr('src', response.Poster);
             }
-
-
     });
   }
 });
