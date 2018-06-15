@@ -1,0 +1,94 @@
+body, html{
+  width: 100%;
+  height: 95%;
+  background-color: Maroon;
+}
+
+.container{
+  width: 70%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  box-shadow: 0 0 50px #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1, h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.audio{
+  width: 60%;
+  padding-left: 40px;
+  margin: 0 auto;
+}
+
+button{
+  width: 18%;
+  height: 50%;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 15px black;
+  border: 2px solid black;
+}
+
+#songSearch{
+  color: black;
+  width: 30%;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  font-size: 20px;
+  padding: 5px;
+  margin: auto;
+}
+
+#listOfSongs {
+  width: 48%;
+  color: white;
+  padding: 10px;
+  margin-top: 50px;
+  box-shadow: 0 0 50px #FFF;
+  border: 1px solid black;
+  float: left;
+}
+
+.notFirst:hover{
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  border: 2px solid black;
+  box-shadow: 0 0 5px white;
+  background-color: steelblue;
+}
+
+.songPlaying{
+  width: 48%;
+  margin: 50px 0;
+  float: right;
+}
+
+.img{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.description{
+  width: 360px;
+  padding: 10px;
+  margin: 5px auto;
+  box-shadow: 0 0 50px white;
+  border: 2px solid black;
+}
+
+span{
+  color: white;
+  font-size: 17px;
+  font-family: cursive;
+  letter-spacing: inherit;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JukeBox Start Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>JukeBox Start Kit</h1>
+
+    <audio id="myAudio">
+	     <source src="" type="audio/mp3">
+	  </audio>
+
+    <div class="audio">
+      <button id="prev" type="button"><i class="fas fa-arrow-circle-left"></i></button>
+      <button id="play" type="button"><i class="fas fa-play"></i></button>
+      <button id="pause" type="button"><i class="fas fa-pause-circle"></i></button>
+      <button id="stop" type="button"><i class="fas fa-stop-circle"></i></button>
+      <button id="next" type="button"><i class="fas fa-chevron-circle-right"></i></button>
+    </div>
+<!--
+    <div class="searchBox">
+      <h3>Search</h3>
+      <input id="songSearch" type="text" name="" value="">
+    </div> -->
+
+    <table id="listOfSongs">
+      <tr>
+        <th>Artist<hr></th>
+        <th>Song<hr></th>
+      </tr>
+    </table>
+
+    <div class="songPlaying">
+      <h3>Song Playing</h3>
+      <div class="img">
+          <img src="">
+      </div>
+      <br>
+      <div class="description">
+        <h3>Artist: <hr> <span id="uno"></span> </h3>
+        <h3>Song: <hr> <span id="dos"></span> </h3>
+        <h3>Album: <hr> <span id="tres"></span> </h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
