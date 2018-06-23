@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object Oriented JavaScript</title>
+
+  </head>
+  <body>
+
+    <h1>Object Oriented JavaScript</h1>
+
+    <p>
+      <h3><strong>Everything you can call through the console</strong></h3>
+
+      <h4>Variables Defined</h4>
+      <ul>
+        <li><em>name</em></li>
+        <li><em>age</em></li>
+        <li><em>gender</em></li>
+        <li><em>country</em></li>
+      </ul>
+
+      <h4>Functions Defined</h4>
+      <ul>
+        <li><em>human</em></li>
+      </ul>
+
+    </p>
+
+    <script type="text/javascript">
+
+    // PROTOTYPICAL OBJECTS
+    var name;
+    var age;
+    var gender;
+    var country;
+
+    // CONSTRUCTOR FUNCTION
+    function human(name, age, gender, country){
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.country = country;
+    }
+
+    // OBJECT LITERAL
+    human.prototype.myCountry = function() {
+      return "I'm from " + this.country;
+    }
+
+    // CREATING INSTANCES OF A OBJECT
+    var Starlyn = new human("Starlyn Urena Ventura", 21, "male", "Dom. Rep");
+    var Melida  = new human("Melida Pardo", 20, "female", "Mexico");
+
+
+    // WRITE A METHOD THAT LISTS THE PROPERTIES OF A JAVASCRIPT OBJECT
+
+
+    </script>
+  </body>
+</html>

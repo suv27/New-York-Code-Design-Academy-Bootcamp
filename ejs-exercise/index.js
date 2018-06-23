@@ -1,26 +1,34 @@
 const express = require('express');
 const app = express();
 const port = 8080
-const { Pool, Client } = require('pg');
-const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'postgres',
-    password: '#BeastMode27',
-    port: 5432,
-});
+const { Pool, Client} = require('pg');
+// const pool = new Pool({
+//   user: 'postgres',
+//   host: 'localhost',
+//   database: 'postgres',
+//   password: '#BeastMode27',
+//   port: 5432,
+// });
+
+const pool = new Pool ({
+  connectionString: process.env.DATABASE_URL,
+  ssl: true
+})
+
 let newObj = {};
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 var parser = require('body-parser');
 app.use(express.json());
-app.use(parser.urlencoded({extended: true}));
+app.use(parser.urlencoded({
+  extended: true
+}));
 
 // *****************************************************************************************************************************/
 app.get('/grocery', (req, res) => {
-  res.render('Grocery', {
+  res.render('grocery', {
     groceries: ['bananas', 'milk', 'lettuce', 'Eggs', 'Juice', 'Bathing Soap'],
-      hobbies: ['Gym', 'Baseball', 'coding', 'drink a lot']
+    hobbies: ['Gym', 'Baseball', 'coding', 'drink a lot']
   })
 });
 
@@ -30,12 +38,12 @@ app.get('/grocery', (req, res) => {
 app.get('/users', (req, res) => {
 
   pool.query('select * from userdata', (request, response) => {
-      // console.log(res.rows);
-      newObj = response.rows;
+    // console.log(res.rows);
+    newObj = response.rows;
 
-      res.render('users', {
-        userdata: newObj
-      })
+    res.render('users', {
+      userdata: newObj
+    })
   });
 
 });
@@ -43,25 +51,18 @@ app.get('/users', (req, res) => {
 app.post('/post', (req, res) => {
   var info = req.body;
   var query = {
-      text: 'INSERT INTO userdata(id, email, states) VALUES($1, $2, $3)',
-      values: [info.id, info.email, info.states]
+    text: 'INSERT INTO userdata(email, states) VALUES($1, $2)',
+    values: [info.email, info.states]
   }
 
   pool.query(query, (req, res) => {
     console.log(query);
   });
 
-  res.redirect('Users#');
+  res.redirect('Users');
 
 });
 
-// *****************************************************************************************************************************/
-app.get('/hats', (req, res) => {
-    res.render('hats', {
-
-    })
-});
-
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening to ${port}`);
 });

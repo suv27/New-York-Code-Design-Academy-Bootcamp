@@ -1,0 +1,35 @@
+body{
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container{
+  width: 100%;
+  max-width: 500px;
+  vertical-align: middle;
+  font-size: 1.5em;
+  padding: 50px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background: transparent;
+}
+
+h1{
+  text-align: center;
+}
+
+.un-input{
+  margin-left: 20px;
+}
+
+.e-input{
+  margin-left: 70px;
+}
+
+.p-input{
+  margin-left: 25px;
+}

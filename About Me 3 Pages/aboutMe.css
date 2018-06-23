@@ -1,0 +1,54 @@
+body {
+	background: pink;
+}
+
+header{
+	width: 70%;
+	padding: 20px;
+	margin: auto;
+  text-align: center;
+	background-color: #F0F0F0;
+}
+
+a{
+	padding: 15px;
+	background-color: #898989;
+	border-radius: 50%;
+}
+
+h2 {
+	text-align: center;
+	color: #000000;
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+	background-color: rgba(250, 0, 250, 0.5);
+}
+
+h1:nth-of-type(1){
+	width: 30%;
+	font-family: Do+Hyeon;
+	margin: 1.66%;
+	font-size: 23px;
+	font-weight: 600;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	border-bottom: 2px solid #f1f1f1;
+}
+
+h4 {
+	text-align: center;
+	color: #0000ff ;
+	background: rgb(255, 100, 50)
+}
+
+li {
+	color: #FF0005;
+}
+
+.resume{
+	text-align: center;
+}

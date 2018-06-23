@@ -1,0 +1,32 @@
+
+body{
+  background-color: yellow;
+}
+
+h1, h4{
+  text-align: center;
+}
+
+h1{
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.container{
+  width: 900px;
+  margin: auto;
+}
+
+ p{
+  width: 100%;
+  text-align: center;
+  background-color: orange
+}
+
+
+
+.art{
+  width: 46%;
+  padding: 10px;
+  float: left;;
+}

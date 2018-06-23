@@ -1,0 +1,21 @@
+body{
+  background-color: yellow;
+  padding: 30%;
+}
+
+h1{
+  text-align: center;
+}
+
+img{
+  display: block;
+  width: 250px;
+
+  float: right;
+}
+
+p{
+  width: 100%;r
+  border: 2px solid #FFAB98;
+  background-color: #A2F9F0
+}
