@@ -1,7 +1,7 @@
 # JukeBox Start Kit 
 A web app music player, this was to practice AJAX calls, JSON retrieval and DOM Manipulation with jQuery.
 
-![Alt text](/Users/Starlyn/Projects/New York Code Design Academy Bootcamp/JukeBox Start Kit W: Napster Api/webapp.png?raw=true "JukeBox Start Kit Image")
+![webapp](https://user-images.githubusercontent.com/36493537/44617009-3d472b80-a829-11e8-9faa-9a84d461707e.png)
  
 
 ## How to run it 
