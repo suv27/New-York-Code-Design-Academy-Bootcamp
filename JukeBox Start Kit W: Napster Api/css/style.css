@@ -6,7 +6,6 @@ body, html{
 
 .container{
   width: 70%;
-  height: 100%;
   color: white;
   padding: 20px;
   margin: 0 auto;
@@ -79,7 +78,6 @@ button{
 }
 
 .description{
-  width: 360px;
   padding: 10px;
   margin: 5px auto;
   box-shadow: 0 0 50px white;
