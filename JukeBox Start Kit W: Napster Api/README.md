@@ -5,7 +5,6 @@ A web app music player, this was to practice AJAX calls, JSON retrieval and DOM 
  
 
 ## How to run it 
-- Steps
  * Clone the repo
  * Open `index.html` in the browser
   
