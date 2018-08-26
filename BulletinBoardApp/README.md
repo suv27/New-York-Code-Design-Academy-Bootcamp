@@ -1,4 +1,4 @@
-#Blog Post Web App 
+# Blog Post Web App 
 
 An application that lets users write posts for everyone to see using PostgreSQL to save and retrieve data from database.
 
