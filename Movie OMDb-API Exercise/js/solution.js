@@ -1,4 +1,3 @@
-
 $('#searchBox').keyup((event) => {
   if ($('#searchBox').val().length >= 2) {
     $.ajax({
@@ -9,7 +8,6 @@ $('#searchBox').keyup((event) => {
       },
       url: 'http://www.omdbapi.com/?i=tt3896198&apikey=' + apikey,
       success: (response) => {
-        console.log(response);
         $('#title span').html(response.Title);
         $('#year span').html(response.Year);
         $('#rated span').html(response.Rated);
@@ -17,6 +15,9 @@ $('#searchBox').keyup((event) => {
         $('#runtime span').html(response.Runtime);
         $('img').attr('src', response.Poster);
       },
+      error: (err) => {
+        console.log(err);
+      }
     });
   }
 });
