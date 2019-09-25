@@ -6,7 +6,7 @@ $('#searchBox').keyup((event) => {
       data: {
         t: event.target.value,
       },
-      url: 'http://www.omdbapi.com/?i=tt3896198&apikey=' + apikey,
+      url: 'http://www.omdbapi.com/?i=tt3896198&apikey=',// + apikey,
       success: (response) => {
         $('#title span').html(response.Title);
         $('#year span').html(response.Year);
@@ -16,7 +16,8 @@ $('#searchBox').keyup((event) => {
         $('img').attr('src', response.Poster);
       },
       error: (err) => {
-        console.log(err);
+        console.log("Error: ", err);
+        $('img').attr('src', '404.jpg')
       }
     });
   }
