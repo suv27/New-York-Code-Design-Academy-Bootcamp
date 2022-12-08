@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "nodemon": "^1.17.5",
     "pg": "^7.4.3",
     "sequelize": "^5.15.1"
